@@ -5,6 +5,23 @@ def string_methods():
     """
     nombre = "   Grace Hopper   "
     frase = "Python es un gran lenguaje de programacion"
-    multilinea = """Linea 1
-    Linea 2
-    Linea 3"""
+    multilinea = """Linea 1\nLinea 2\nLinea 3"""
+
+    print("Strip: " + nombre.strip())
+    print("Lstrip: " + nombre.lstrip())
+    print("Rstrip: " + nombre.rstrip())
+    print("Upper: " + frase.upper())
+    print("Lower: " + frase.lower())
+    print("Title: " + frase.title())
+    print("Find: " + str(frase.find("gran")))
+    print("Replace: " + frase.replace("programacion", "desarrollo"))
+    print("Count: " + str(frase.count("a")))
+    print("Contiene Python: " + str("Python" in frase))
+    print("Contiene Java: " + str("Java" in frase))
+    print("Slice: " + frase[0:6])
+    print("Paso: " + frase[0:6:2])
+    print("Reverso:" + frase[6::-1])
+    print(f"Formato: {nombre.strip()} sabe {frase[0:6]}")
+    print(f"{multilinea}")
+
+
